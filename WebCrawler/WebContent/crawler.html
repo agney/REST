@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Web Crawler</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+</head>
+<body>
+
+<!-- <div id=wrapper">
+<nav style="margin-bottom: 0" role="navigation" class="navbar navbar-default navbar-static-top">
+            <div class="navbar-header">
+                <div class="navbar-brand">Crawler DashBoard</div>
+                <div class="nav navbar-top-links navbar-right">
+                <button id="logoutBtn" class="btn btn-sm btn-danger btn-block">Log Out</button>
+                </div>
+            </div>
+        </nav>
+</div> -->
+
+<nav style="margin-bottom: 0" class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header pull-left">     
+          	<p class="navbar-brand" style="margin-top:1%">Crawler DashBoard</p>
+          	<h4 id="userheader" style="color: #FF7000 "></h4>
+        </div>
+       <div class="navbar-header pull-right"> 
+			<button id="logoutBtn" class="btn primary large btn-danger center-block" style="margin-top:40%">Log Out</button>
+        </div>
+    </div>
+</nav>
+
+<!-- <div class="row">
+<nav class="navbar navbar-default" role="navigation">
+  <div class="navbar-brand">Crawler DashBoard</div>
+  <div class="nav navbar-nav pull-right"><button id="logoutBtn" class="btn btn-sm btn-danger" type="button">Log Out</button></div>
+</nav>
+</div> -->
+<div class="row" >
+<div class="center-block">
+    <div class="input-group" style="margin-left:25%;margin-right: 25%; margin-top:1% ;margin-bottom: 1% ">
+   <!--  <span class="input-group-btn">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">http://  <span class="caret"></span></button>
+      </span> -->
+      <input type="text" id="url" class="form-control" placeholder="Add Url : (Don't forget to Add 'http://' OR 'https://' in your URL)">
+      <span class="input-group-btn">
+        <button id="addBtn" class="btn btn-default" type="button">Add !</button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+
+<!-- <div class="input-group">
+  <input type="text" id="url" class="form-control" placeholder="Add Url" aria-describedby="basic-addon2">
+</div>
+<div class="form-group col-md-4"><button id="addBtn">Add</button></div>
+</div>
+ -->
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading" style="font-weight: bold;">URL's Given For Health Check</div>
+  <!-- Table -->
+  <table class="table table-striped">
+  <thead><tr><th class="text-center">Index</th><th class="text-center">URLs</th><th class="text-center">Status</th><th class="text-center">Health</th></tr></thead>
+  <tbody id="urlTable"></tbody>
+  </table>
+</div>
+	<!-- Enter URL!!
+	<input type="text" id="url" />
+	<br />
+	<button id="addBtn">Add</button>
+	<button id="logoutBtn">Log Out</button>
+	<table id="urlTable"></table> -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="js/modernizr.js"></script>
+	<script src="js/crawling.js"></script>
+</body>
+</html>

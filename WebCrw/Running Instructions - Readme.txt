@@ -1,7 +1,7 @@
 Project Details
 
 Project : Crawler
-Author : Prashant Akbari
+Author : Agney prashant
 
 Description:
 This is HTML5+js+bootstrap(FrontEnd)/J2EE(BackEnd)+MySQL Application
